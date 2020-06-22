@@ -47,7 +47,9 @@ public class CircByRadius extends Circle {
     public boolean equals( Object o ) {
         if ( o instanceof Circle ) {
             Circle that = (Circle) o;
-            return this.rad == that.getRadius();
+            // technical issue, off by small decimals, 
+            // so convert to half the precession and compare there.
+            return (float) this.rad == (float) that.getRadius();
         } else {
             return false;
         }

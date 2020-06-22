@@ -9,8 +9,8 @@ public class TestEquality {
         System.out.println( "Radius-Radius == comparison " + (cr1==cr2) 
                             + " vs. equals " + cr1.equals(cr2));
 
-        Circle ca1 = new CircByArea(Math.sqrt(1/Math.PI));
-        Circle ca2 = new CircByArea(Math.sqrt(1/Math.PI));
+        Circle ca1 = new CircByArea(Math.PI);
+        Circle ca2 = new CircByArea(Math.PI);
         System.out.println( "Area-Area comparison " + (ca1==ca2)
                             + " vs. equals " + ca1.equals(ca2));
 

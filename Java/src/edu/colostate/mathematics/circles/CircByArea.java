@@ -47,7 +47,9 @@ public class CircByArea extends Circle {
     public boolean equals( Object o ) {
         if ( o instanceof Circle ) {
             Circle that = (Circle) o;
-            return this.area == that.getArea();
+            // technical issue, off by small decimals, 
+            // so convert to half the precession and compare there.
+            return (float) this.area == (float) that.getArea();
         } else {
             return false;
         }
