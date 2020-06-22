@@ -6,5 +6,6 @@ public abstract class Circle {
 
     public abstract double getArea();
 
+    public abstract double getCircumference();
     
 }

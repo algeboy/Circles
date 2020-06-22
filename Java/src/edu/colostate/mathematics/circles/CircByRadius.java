@@ -40,8 +40,23 @@ public class CircByRadius extends Circle {
      */
     @Override
     public double getArea() {
-        return Math.PI * rad;
+        return Math.PI * rad * rad;
     }
+
+
+    /**
+     * This serves as the eliminator for circles treated as having area.
+     * Again we are required to define it to become a concrete class as
+     * this is required in our interface `Circle`.  Unlike #getRadius()
+     * here we have to modify the return appropriately.
+     * 
+     * @return the circumference of the circle.
+     */
+    @Override
+    public double getCircumference() {
+        return 2 * Math.PI * rad;
+    }
+
 
     @Override
     public boolean equals( Object o ) {

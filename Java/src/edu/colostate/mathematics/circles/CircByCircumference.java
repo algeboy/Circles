@@ -43,7 +43,20 @@ public class CircByCircumference extends Circle {
      */
     @Override
     public double getArea() {
-        return Math.pow(( circumference /(2 * Math.PI) ,2)* Math.PI;
+        return Math.pow(( circumference /(2 * Math.PI) ),2)* Math.PI;
+    }
+
+    /**
+     * This serves as the eliminator for circles treated as having area.
+     * Again we are required to define it to become a concrete class as
+     * this is required in our interface `Circle`.  Unlike #getRadius()
+     * here we have to modify the return appropriately.
+     * 
+     * @return the circumference of the circle.
+     */
+    @Override
+    public double getCircumference() {
+        return circumference;
     }
 
     @Override
@@ -52,7 +65,7 @@ public class CircByCircumference extends Circle {
             Circle that = (Circle) o;
             // technical issue, off by small decimals, 
             // so convert to half the precession and compare there.
-            return (float) this.getArea() == (float) that.getArea();
+            return (float) this.circumference == (float) that.getCircumference();
         } else {
             return false;
         }
