@@ -18,4 +18,83 @@ trait Circle {
     def getCircumference(): Double
 
 }
+
+
+
+class CircByRadius(rad:Double) extends Circle{
+    
+    def getRadius()={
+        rad
+    }
+    
+
+    def getArea() ={
+        rad * rad * Math.PI
+    }
+
+
+    def getCircumference()={
+        2*rad *Math.PI
+    }
+
+
+
+
+    def equals(o:Circle)={
+        if (o.getRadius() == rad) true
+        else false
+    }
+}
+
+
+
+class CircByArea(area:Double) extends Circle{
+
+  def getRadius()={
+        Math.sqrt(area/Math.PI)
+    }
+
+  def getArea() ={
+        area
+    }
+
+
+    def getCircumference()={
+       Math.sqrt(area/Math.PI) * 2 * Math.PI
+    }
+    
+    def equals(o:Circle)={
+        if (o.getArea() == area) true
+        else false
+    }
+
+}
+
+class CircByCircumference(cir:Double) extends Circle{
+
+def getRadius() = {
+  cir / (2 * Math.PI)
+}
+
+def getArea()={
+  Math.pow( cir / (2 * Math.PI),2) * 2 * Math.PI
+}
+
+def getCircumference()={
+       cir
+    }
+
+    def equals(o:Circle)={
+        if (o.getCircumference() == cir) true
+        else false
+    }
+}
+
+
+
+
+
+
+
+
 }
