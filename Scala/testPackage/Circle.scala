@@ -10,7 +10,7 @@ package testPackage{
  * pages to access and edit them.
  **/
 
-trait circle {
+trait Circle {
     def getRadius(): Double
 
     def getArea(): Double
