@@ -1,4 +1,4 @@
-package edu.colostate.mathematics.circles;
+package testPackage {
 
 class TestEquality {
 
@@ -13,4 +13,6 @@ class TestEquality {
                             + " vs. equals " + cr1.equals(cr2));
     }
     
+}
+
 }

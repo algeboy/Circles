@@ -2,8 +2,8 @@
   * I should probably change this package name but 
   * I need to think of one.
   */
+package testPackage{
 
-package edu.colostate.mathematics.circles;
 
 /**
  * Here we do not want sealed as we want other 
@@ -16,4 +16,6 @@ trait circle {
     def getArea(): Double
 
     def getCircumference(): Double
+
+}
 }

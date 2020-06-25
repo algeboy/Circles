@@ -1,4 +1,4 @@
-package edu.colostate.mathematics.circles;
+package testPackage{
 
 class CircByCircumference(d:Double) extends Circle{
 
@@ -6,4 +6,6 @@ class CircByCircumference(d:Double) extends Circle{
 
 
     
+}
+
 }

@@ -1,4 +1,4 @@
-package edu.colostate.mathematics.circles;
+package testPackage;
 
 class CircByRadius(rad:Double) extends Circle{
     
