@@ -90,11 +90,20 @@ def getCircumference()={
     }
 }
 
+object test{
+
+    import testPackage.
 
 
+  
 
+    val cr1 = CircByRadius(1.0)
+    val cr2 = CircByRadius(1.0)
+        
+    println( "Radius-Radius == comparison " + (cr1==cr2) 
+                            + " vs. equals " + cr1.equals(cr2))
+    
 
-
-
+}
 
 }
