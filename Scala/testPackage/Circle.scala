@@ -10,7 +10,8 @@ package testPackage{
  * pages to access and edit them.
  **/
 
-trait Circle {
+
+trait Circle     {
     def getRadius(): Double
 
     def getArea(): Double
@@ -18,6 +19,7 @@ trait Circle {
     def getCircumference(): Double
 
 }
+
 
 /**
  * Constructor (introduction) for a circle given by a radius.
